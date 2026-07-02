@@ -1,0 +1,68 @@
+.contact-header {
+  min-height: 18rem;
+  padding: 5rem 8vw;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.86),
+      rgba(255, 255, 255, 0.35)
+    ),
+    url("../assets/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-header h1 {
+  color: #d06915;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.contact-header h3 {
+  margin-top: 0.5rem;
+  color: #26332f;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 4rem 8vw;
+  background-image: url("../assets/background.jpeg");
+  background-size: cover;
+}
+
+.contact-form-input {
+  padding: 2rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 12px 30px rgba(1, 26, 21, 0.08);
+}
+
+.contact-form-image img {
+  width: 100%;
+  max-height: 460px;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .contact-header {
+    min-height: 14rem;
+    padding: 3.5rem 1.25rem;
+  }
+
+  .contact-header h1 {
+    font-size: 2.6rem;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.25rem;
+  }
+
+  .contact-form-image {
+    display: none;
+  }
+}

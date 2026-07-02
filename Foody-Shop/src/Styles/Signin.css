@@ -1,0 +1,13 @@
+@import "./Login.css";
+
+.sign-container {
+  grid-template-columns: minmax(0, 460px) minmax(0, 420px);
+}
+
+.sign-form {
+  border-radius: 8px 0 0 8px;
+}
+
+.sign-image {
+  border-radius: 0 8px 8px 0;
+}

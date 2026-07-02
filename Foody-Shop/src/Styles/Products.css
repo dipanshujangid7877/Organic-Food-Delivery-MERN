@@ -1,0 +1,119 @@
+.products-header {
+  min-height: 18rem;
+  padding: 5rem 8vw;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.86),
+      rgba(255, 255, 255, 0.35)
+    ),
+    url("../assets/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.products-header h1 {
+  color: #d06915;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.products-header h3 {
+  margin-top: 0.5rem;
+  color: #26332f;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.product-status {
+  margin: 1.5rem auto 0;
+  width: min(1120px, 90%);
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  background: #fff2e6;
+  color: #73420f;
+  font-weight: 700;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  width: min(1180px, 92%);
+  margin: 2rem auto 4rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+  border-radius: 8px;
+  background-color: #f3faf7;
+  box-shadow: 0 12px 30px rgba(1, 26, 21, 0.08);
+}
+
+.products-image {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #e8f1ed;
+}
+
+.products-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .products-image img {
+  transform: scale(1.05);
+}
+
+.about-products {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1rem;
+}
+
+.product-name h2 {
+  margin: 0 0 0.25rem;
+  color: #172722;
+  font-size: 1.2rem;
+}
+
+.product-description {
+  flex: 1;
+  color: #52625d;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.about-products button {
+  align-self: flex-start;
+  min-height: 42px;
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 8px;
+  background-color: #4c8077;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.about-products button:hover {
+  background: #d06915;
+}
+
+@media (max-width: 640px) {
+  .products-header {
+    min-height: 14rem;
+    padding: 3.5rem 1.25rem;
+  }
+
+  .products-header h1 {
+    font-size: 2.6rem;
+  }
+}

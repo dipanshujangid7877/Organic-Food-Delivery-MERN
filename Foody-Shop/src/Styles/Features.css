@@ -1,0 +1,128 @@
+.features-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 15rem;
+  padding: 3rem 1.25rem;
+  background-image: url("../assets/background.jpeg");
+  background-size: cover;
+}
+
+.features-heading {
+  text-align: center;
+}
+
+.features-heading h1 {
+  color: #172722;
+  font-size: 3.1rem;
+  font-weight: 800;
+}
+
+.features-heading p {
+  color: #52625d;
+  line-height: 1.7;
+}
+
+.features-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  padding: 1rem 6vw 4rem;
+  background-image: url("../assets/background.jpeg");
+  background-size: cover;
+  text-align: center;
+}
+
+.features-card-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-height: 25rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 12px 30px rgba(1, 26, 21, 0.08);
+}
+
+.features-card-1 img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.features-card-1 h2 {
+  color: #172722;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.features-card-1 p {
+  flex: 1;
+  color: #52625d;
+  line-height: 1.55;
+}
+
+.features-card-1 button {
+  min-height: 42px;
+  padding: 0 1rem;
+  border: 0;
+  border-radius: 8px;
+  background-color: #4c8077;
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.whychooseus {
+  padding: 4rem 6vw;
+  color: white;
+  background: linear-gradient(90deg, #d06915, #4c8077);
+  text-align: center;
+}
+
+.whychooseus h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.whychoose-us {
+  margin: 0.7rem auto 2rem;
+  max-width: 720px;
+  line-height: 1.7;
+}
+
+.whychooseus-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.one-customer {
+  padding: 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.one-customer h2 {
+  font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+  .features-cards,
+  .whychooseus-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .features-heading h1,
+  .whychooseus h1 {
+    font-size: 2.25rem;
+  }
+
+  .features-cards,
+  .whychooseus-cards {
+    grid-template-columns: 1fr;
+  }
+}

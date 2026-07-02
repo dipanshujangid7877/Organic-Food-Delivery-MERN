@@ -1,0 +1,119 @@
+.footer {
+  background-color: #011a15;
+  padding: 3rem 6vw 1.5rem;
+}
+
+.footer-heading {
+  text-align: center;
+}
+
+.footer-header h2 {
+  color: white;
+  font-size: 2rem;
+  text-decoration: underline double white 2px;
+  text-underline-offset: 7px;
+}
+
+.subscribe-div {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1.5rem auto 2rem;
+  max-width: 620px;
+}
+
+.email-input-div {
+  flex: 1;
+}
+
+.email-input-div input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 1rem;
+  border: 0;
+  border-radius: 8px;
+}
+
+.subscribe-button button {
+  min-height: 44px;
+  padding: 0 1.1rem;
+  border: 0;
+  border-radius: 8px;
+  background-color: #d06915;
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.footer-items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.address,
+.quicklinks,
+.updates {
+  color: white;
+}
+
+.address h5,
+.quicklinks h5,
+.updates h5 {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.line-div {
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.quicklinks-items,
+.contact-details,
+.address-details {
+  margin-top: 1rem;
+}
+
+.footer a,
+.contact-details p,
+.address-details p {
+  color: rgb(196, 205, 201);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.footer a {
+  display: block;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.contact-image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.contact-image img {
+  width: 44px;
+  height: 24px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  .subscribe-div,
+  .footer-items {
+    grid-template-columns: 1fr;
+  }
+
+  .subscribe-div {
+    flex-direction: column;
+  }
+}
